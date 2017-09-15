@@ -1,0 +1,47 @@
+<div class="input-group pull-right search">
+  <input class="form-control" type="text" placeholder="Найти" ng-model="vm.query">
+  <span class="input-group-btn">
+    <button class="btn btn-default" ng-click="">
+      <i class="ion-android-options"></i>
+    </button>
+    <button class="btn btn-default" id="activate" ng-click="vm.menu.artist(); vm.menu.track(); vm.menu.album();">
+      <i class="ion-ios-search-strong"></i>
+    </button>
+  </span>
+</div>
+<div class="search-results">
+  <ul id="artists-results">
+    <li>
+      <h3>Совпадения по исполнителю:</h3>
+    </li>
+    <li ng-repeat="artist in vm.artists">
+      <div class="col-xs-12 result-text">
+        <!-- <a ui-sref="artist.main({name: artist.name})"> -->
+            <img ng-src=" {{artist.image[2]['#text']}} " alt="" class="col-xs-2">
+            <div class="col-xs-10">
+              
+              <a ui-sref="artist.main({name: artist.name})"><h4>{{artist.name}}</h4></a>
+              <!-- <p></p> -->
+            </div>
+          <!-- </a> -->
+      </div>
+    </li>
+  </ul>
+  <ul id="tracks-results">
+    <li>
+      <h3>Совпадения по трекам:</h3>
+    </li>
+    <li ng-repeat="track in vm.tracks">
+      <div class="col-xs-12 result-text">
+        <!-- <a ui-sref=""> -->
+        <!-- <a ui-sref="track.main({name: track.name})"> -->
+          <img ng-src=" {{track.image[2]['#text']}} " alt="" class="col-xs-2">
+          <div class="col-xs-10">
+            <h4>{{track.name}}</h4>
+            <a ui-sref="artist.main({name: track.artist})"><p>{{track.artist}}</p></a>
+          </div>
+        <!-- </a> -->
+      </div>
+    </li>
+  </ul>
+</div>

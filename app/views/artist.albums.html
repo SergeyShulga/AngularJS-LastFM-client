@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-12" ng-repeat="album in vm.model.artistAlbumsResponse.topalbums.album">
+    <div class="col-md-1"><span class="position">{{$index+1}}</span></div>
+    <div class="col-md-2">
+      <img ng-src="{{album.image[3]['#text']}}" class="img-responsive" alt="">
+    </div>
+    <div class="col-md-9">
+      <p class="album-name">{{album.name}}</p>
+      <p class="stats">Слушателей: {{album.listeners}} </p>
+      <p class="stats">Прослушиваний: {{album.playcount}} </p>
+    </div>
+  </div>
+</div>

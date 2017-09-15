@@ -1,0 +1,17 @@
+<div class="row chart-artist">
+      
+      <div class="col-md-4">
+        <img ng-src="{{artist.image[3]['#text']}}"  class="img-responsive" alt="{{artist.name}}">
+      </div>
+      <div class="col-md-7">
+        <div class="artist-header">
+          <p>
+            <a class="artist-name" ui-sref="artist.main({name: artist.name})">{{artist.name}}</a>
+          </p>
+        </div>
+        <div class="artist-footer">
+          <p class="stats"> Слушателей: {{artist.listeners}} </p> 
+          <p class="stats"> Прослушиваний: {{artist.playcount}} </p>
+        </div>
+      </div>
+    </div>

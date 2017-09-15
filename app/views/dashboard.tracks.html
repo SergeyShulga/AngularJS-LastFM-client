@@ -1,0 +1,32 @@
+<!--<div class="sort-block col-md-12">
+  <span>Сортировать по: </span>
+  <select name="sort" id="sort">
+    <option value="name">Имени</option>
+    <option value="listeners">Кол-ву слушателей</option>
+    <option value="playcount">Кол-ву прослушиваний</option>
+  </select>
+</div>-->
+<div class="row">
+  <div class="col-md-6 chart" ng-repeat="track in vm.model.chartTracksResponse.tracks.track track by  $index">
+    <div class="row chart-track">
+      <div class="col-md-1"> <span class="position">{{$index+1}}</span> </div>
+      <div class="col-md-4">
+        <img ng-src="{{track.image[3]['#text']}}" class="img-responsive" alt="{{track.name}}">
+      </div>
+      <div class="col-md-7">
+        <div class="track-header">
+          <p>
+            <a href="{{track.url}}" class="track-name">{{track.name}}</a>
+          </p>
+          <p>
+            <a href="{{track.artist.url}}" class="artist-name">{{track.artist.name}}</a>
+          </p>
+        </div>
+        <div class="track-footer">
+          <p>Слушателей: {{track.listeners}}</p>
+          <p>Прослушиваний: {{track.playcount}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

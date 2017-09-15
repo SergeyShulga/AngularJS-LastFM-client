@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <title>AngularJS Catalog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/styles/bootstrap.css" rel="stylesheet">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/styles/style.css" rel="stylesheet">
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+  </head>
+  <body ng-app="app">
+    <app-header></app-header>
+    <div class="container-fluid">
+      <content>
+        <ui-view></ui-view>
+      </content>
+    </div>
+    <app-footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.6.5/angular-resource.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.4/angular-material.min.js"></script>
+      <script src="http://fgnass.github.io/spin.js/spin.min.js"></script>
+      <script src="app/app.core.js"></script>
+      <script src="app/routing.js"></script>
+      <script src="app/models/dashboard.model.js"></script>
+      <script src="app/models/search.model.js"></script>
+      <script src="app/models/artist.model.js"></script>
+      <script src="app/controllers/dashboard.controller.js"></script>
+      <script src="app/controllers/search.controller.js"></script>
+      <script src="app/controllers/artist.controller.js"></script>
+      <script src="app/directives/header.directive.js"></script>
+      <script src="app/directives/search.directive.js"></script>
+      <script src="app/directives/footer.directive.js"></script>
+      <script src="app/directives/dashboard.menu.directive.js"></script>
+      <script src="app/directives/artist.menu.directive.js"></script>
+      <script src="app/directives/chart.artist.directive.js"></script>
+      <script src="assets/js/angular-spinner.min.js"></script>
+      <script src="app/angular-loading-spinner.js"></script>
+    </app-footer>
+  </body>
+</html>

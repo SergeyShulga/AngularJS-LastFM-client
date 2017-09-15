@@ -1,0 +1,163 @@
+ng-cloak{
+    display: none !important;
+}
+.artist-name{
+    color: #13b9c3;
+}
+a.artist-name:hover{
+    color: #189aa2;
+}
+.stats{
+    color: #989898;
+    font-weight: 300;
+}
+header{
+    .navbar-brand{
+        padding: 3px 10px;
+        img{
+            height: 44px;
+        }
+    }
+    .search{
+        width: 40%;
+        input[type="text"]{
+            background: none;
+            border: none;
+            color: #fff;
+            height: 50px;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        button{
+            background: none;
+            border: none;
+            border-radius: none;
+            padding: 9px 18px;
+            i{
+                font-size: 22px;
+                color: #fff;
+            }
+        }
+    }
+    .search-results{
+        background-color: #ffffff;
+        box-shadow: #ccc 0px 5px 10px;
+        height: 400px;
+        width: 40%;
+        padding-top: 5px;
+        overflow-y: scroll;
+        right: 0;
+        top: 45px;
+        position: absolute;
+        z-index: 10;
+
+        ul{
+            list-style: none;
+            padding-left: 0px;
+
+            h3{
+                margin: 10px 0px 15px 15px;
+            }
+
+            .result-text{
+                margin-bottom: 5px;
+                padding: 0;
+            }
+        }
+
+        &::-webkit-scrollbar-track
+        {
+            border-radius: 0px;
+            background-color: #ffffff;
+        }
+        
+        &::-webkit-scrollbar
+        {
+            width: 5px;
+            background-color: #ffffff;
+        }
+        
+        &::-webkit-scrollbar-thumb
+        {
+            border-radius: 0px;
+            background-color: #b3d0be;
+        }
+    }
+}
+main{
+    .sort-block{
+        margin-bottom: 30px;
+    }
+    .chart{
+        
+        margin-bottom: 30px;
+        
+        
+        .chart-artist{
+            display: flex;
+            align-items: center;
+            a.artist-name{
+                font-size: 24px;
+            }
+            .artist-footer p{
+                margin-bottom: 4px;
+                color: #989898;
+                font-weight: 300;
+            }
+        }
+        .chart-track{
+            display: flex;
+            align-items: center;
+            height: 180px;
+            a.track-name{
+                font-size: 24px;
+            }
+            a.artist-name{
+                font-size: 20px;
+            }
+            .track-footer p{
+                margin-bottom: 4px;
+                
+            }
+        }
+        
+    }
+    .artist-main-header{
+        margin-bottom: 30px;
+        p.artist-name{
+            font-size: 32px;
+        }
+        &.secondary{
+            display: flex;
+            align-items: center;
+            p.artist-name{
+                font-size: 28px;
+            }
+        }
+    }
+    .artist-tags{
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+        display: inline-block;
+        li{
+            float: left;
+            margin-right: 10px;
+        }
+    }
+    .label-tag{
+        background-color: #a525c5;
+    }
+    span.position{
+        color: #b3d0be;
+        font-size: 32px;
+    }
+    
+}
+footer{
+    p{
+    margin: 0;
+    padding: 10px 0px;
+    }
+}

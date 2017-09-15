@@ -1,0 +1,2 @@
+apiKey = '18ba87e858ef3e6e22bc35f7d41a8a60';
+sharedSecret = '64e74e49a796f925353e0a3ce08fd728';

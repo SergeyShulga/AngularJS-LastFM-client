@@ -1,0 +1,10 @@
+<div class="row artist-main-header secondary">
+  <div class="col-md-2"><img ng-src=" {{ vm.model.artistInfoResponse.artist.image[3]['#text'] }} " alt="{{vm.model.artistInfoResponse.artist.name}}" class="img-responsive img-circle"></div>
+  <div class="col-md-10">
+    <p class="artist-name"> {{vm.model.artistInfoResponse.artist.name}} </p>
+  </div>
+</div>
+
+<p> {{vm.model.artistInfoResponse.artist.bio.content}} </p>
+<span> {{vm.model.artistInfoResponse.artist.bio.published}} </span>
+<a href=" {{vm.model.artistInfoResponse.artist.bio.link.href}} "> Читать полностью на Last.fm </a>

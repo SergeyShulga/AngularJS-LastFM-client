@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-12" ng-repeat="track in vm.model.artistTracksResponse.toptracks.track">
+    <div class="col-md-1"><span class="position">{{$index+1}}</span></div>
+    <div class="col-md-2">
+      <img ng-src="{{track.image[3]['#text']}}" class="img-responsive" alt="">
+    </div>
+    <div class="col-md-9">
+      <p class="track-name">{{track.name}}</p>
+      <p class="stats">Слушателей: {{track.listeners}} </p>
+      <p class="stats">Прослушиваний: {{track.playcount}} </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="row artist-main-header">
+  <div class="col-md-4"><img ng-src=" {{ vm.model.artistInfoResponse.artist.image[4]['#text'] }} " alt="{{vm.model.artistInfoResponse.artist.name}}" class="img-responsive"></div>
+  <div class="col-md-8">
+    <p class="artist-name"> {{vm.model.artistInfoResponse.artist.name}} </p>
+    <p class="stats">Слушателей: {{vm.model.artistInfoResponse.artist.stats.listeners}} </p>
+    <p class="stats">Прослушиваний: {{vm.model.artistInfoResponse.artist.stats.playcount}} </p>
+
+    <ul class="artist-tags">
+      <li ng-repeat="tag in vm.model.artistInfoResponse.artist.tags.tag">
+        <span class="label label-tag">{{tag.name}}</span>
+      </li>
+    </ul>
+
+    <p> {{vm.model.artistInfoResponse.artist.bio.summary}} </p>
+
+  </div>
+</div>
+
+
+
+
+<div class="row">
+  <div class="col-md-2" ng-repeat="artist in vm.model.artistInfoResponse.artist.similar.artist">
+    
+    <img ng-src=" {{artist.image[3]['#text']}} " ui-sref="artist.main({name: artist.name})" class="img-responsive" alt="{{artist.name}}">
+    <p class="text-center">
+      <a class="artist-name" ui-sref="artist.main({name: artist.name})">{{artist.name}}</a></p>
+  </div>
+</div>

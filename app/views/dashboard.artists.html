@@ -1,0 +1,7 @@
+<!--<span us-spinner="{radius:30, width:8, length: 16}"></span>-->
+<div class="row">
+  <div class="col-md-6 chart" ng-repeat="artist in vm.model.chartArtistsResponse.artists.artist | orderBy: 'listeners' ">
+    <div class="col-md-1"> <span class="position">{{$index+1}}</span> </div>
+    <app-artist artist="artist"></app-artist>
+     </div>
+</div>

@@ -1,0 +1,18 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Позиция</th>
+      <th>Тег</th>
+      <th>Совпадений</th>
+      <th>Использований</th>  
+    </tr> 
+  </thead>
+  <tbody>
+    <tr ng-repeat="tag in vm.model.chartTagsResponse.tags.tag track by $index">
+      <td> {{$index+1}} </td>
+      <td> <a href="{{tag.url}}">{{tag.name}}</a> </td>
+      <td> {{tag.reach}} </td>
+      <td> {{tag.taggings}} </td>
+    </tr>
+  </tbody>
+</table>

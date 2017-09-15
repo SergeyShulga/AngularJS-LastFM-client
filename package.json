@@ -1,0 +1,24 @@
+{
+  "name": "angular_catalog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "static-server -n index.html",
+    "poststart": "echo 'Static server off'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagemini/LastFmCatalog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sagemini/LastFmCatalog/issues"
+  },
+  "homepage": "https://github.com/sagemini/LastFmCatalog#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
