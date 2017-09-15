@@ -1,24 +1,29 @@
 {
-  "name": "angular_catalog",
+  "name": "angular_lastfm_client",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prestart": "gulp build_js",
     "start": "static-server -n index.html",
     "poststart": "echo 'Static server off'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sagemini/LastFmCatalog.git"
+    "url": "git+https://github.com/sagemini/AngularJS-LastFM-client.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sagemini/LastFmCatalog/issues"
+    "url": "https://github.com/sagemini/AngularJS-LastFM-client.git/issues"
   },
-  "homepage": "https://github.com/sagemini/LastFmCatalog#readme",
+  "homepage": "https://github.com/sagemini/AngularJS-LastFM-client.git#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
+    "jshint": "^2.9.5"
   }
 }

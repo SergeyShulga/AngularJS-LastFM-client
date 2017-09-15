@@ -22,8 +22,8 @@
         };
         // console.log(vm.model.chartArtistsResponse)
         // console.log(vm.model.artistInfoResponse)
-        console.log(vm.model.artistTracksResponse)
-        console.log(vm.model.artistAlbumsResponse)
+        console.log(vm.model.artistTracksResponse);
+        console.log(vm.model.artistAlbumsResponse);
         // console.log(vm.model.chartTagsResponse)
     }
 

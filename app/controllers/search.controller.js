@@ -15,7 +15,7 @@
             album: albumSearch,
             track: trackSearch
 
-        }
+        };
         
         // activate();
 
