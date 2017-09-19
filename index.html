@@ -5,12 +5,17 @@
     <title>AngularJS Catalog</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/styles/bootstrap.css" rel="stylesheet">
-    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-    <link href="assets/styles/style.css" rel="stylesheet">
-    <script src="assets/js/jquery-3.2.1.min.js"></script>
-    <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/main.js"></script>
+
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css css/styles.css -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- endbuild -->
+
   </head>
   <body ng-app="app">
     <app-header></app-header>
@@ -20,23 +25,16 @@
       </content>
     </div>
     <app-footer></app-footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.6.5/angular-resource.js"></script>
-    <!-- <script src="app/app.module.js"></script>
-    <script src="app/routing.js"></script>
-    <script src="app/models/dashboard.model.js"></script>
-    <script src="app/models/search.model.js"></script>
-    <script src="app/models/artist.model.js"></script>
-    <script src="app/controllers/dashboard.controller.js"></script>
-    <script src="app/controllers/search.controller.js"></script>
-    <script src="app/controllers/artist.controller.js"></script>
-    <script src="app/directives/header.directive.js"></script>
-    <script src="app/directives/search.directive.js"></script>
-    <script src="app/directives/footer.directive.js"></script>
-    <script src="app/directives/dashboard.menu.directive.js"></script>
-    <script src="app/directives/artist.menu.directive.js"></script>
-    <script src="app/directives/chart.artist.directive.js"></script> -->
-    <script src="dist/app.js"></script>
+
+    <!-- build:js js/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js js/app.js -->
+    <!-- inject:js -->
+    <!-- endinject -->
+    <!-- endbuild -->
+
   </body>
 </html>

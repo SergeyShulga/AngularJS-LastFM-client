@@ -1,10 +1,10 @@
 {
   "name": "angular_lastfm_client",
   "version": "1.0.0",
-  "description": "",
+  "description": "First AngularJS project",
   "main": "index.js",
   "scripts": {
-    "prestart": "gulp build_js",
+    "prestart": "gulp build",
     "start": "static-server -n index.html",
     "poststart": "echo 'Static server off'",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,10 +20,21 @@
   },
   "homepage": "https://github.com/sagemini/AngularJS-LastFM-client.git#readme",
   "devDependencies": {
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.8.0",
     "gulp-concat": "^2.6.1",
+    "gulp-inject": "^4.3.0",
     "gulp-jscs": "^4.0.0",
+    "gulp-jscs-stylish": "^1.4.0",
     "gulp-jshint": "^2.0.4",
-    "jshint": "^2.9.5"
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.2",
+    "gulp-wiredep": "^1.2.0",
+    "jshint": "^2.9.5",
+    "pump": "^1.0.2",
+    "run-sequence": "^2.1.0"
   }
 }

@@ -1,5 +1,5 @@
 ;(function(){
-    'use strict'
+    'use strict';
 
     angular
         .module('app')
@@ -10,6 +10,6 @@
                 controller: 'SearchController',
                 controllerAs: 'vm',
                 templateUrl: 'app/views/templates/search.template.html'
-            }
-        })
+            };
+        });
 })();
