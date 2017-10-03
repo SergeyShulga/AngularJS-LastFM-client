@@ -18,6 +18,14 @@ header{
             height: 44px;
         }
     }
+    app-auth{
+        a{
+            padding-top: 14.5px;
+            padding-bottom: 14.5px;
+            display: inline-block;
+        }
+        
+    }
     .search{
         width: 40%;
         input[type="text"]{
@@ -153,7 +161,24 @@ main{
         color: #b3d0be;
         font-size: 32px;
     }
+
     
+    
+}
+content{
+    .user-header{
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        h3{
+            margin: 0 0 15px 0;
+        }
+    }
+    .loved-track{
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
 }
 footer{
     p{

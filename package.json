@@ -4,7 +4,6 @@
   "description": "First AngularJS project",
   "main": "index.js",
   "scripts": {
-    "prestart": "gulp build",
     "start": "static-server -n index.html",
     "poststart": "echo 'Static server off'",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +19,8 @@
   },
   "homepage": "https://github.com/sagemini/AngularJS-LastFM-client.git#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "connect-history-api-fallback": "^1.3.0",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",

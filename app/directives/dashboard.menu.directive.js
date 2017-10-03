@@ -1,5 +1,5 @@
 ;(function(){
-    'use strict';
+    'use strict'
 
     angular
         .module('app')
@@ -8,6 +8,6 @@
                 restrict: 'E',
                 transclude: true,
                 templateUrl: 'app/views/templates/dashboard.menu.template.html'
-            };
-        });
+            }
+        })
 })();

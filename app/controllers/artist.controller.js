@@ -19,11 +19,11 @@
             artistAlbumsResponse: ArtistModel.artistTopAlbums.get({name: $stateParams.name}),
             // chartTracksResponse: DashboardModel.chartTracks.get(),
             // chartTagsResponse: DashboardModel.chartTags.get()
-        }
+        };
         // console.log(vm.model.chartArtistsResponse)
         // console.log(vm.model.artistInfoResponse)
-        console.log(vm.model.artistTracksResponse);
-        console.log(vm.model.artistAlbumsResponse);
+        console.log(vm.model.artistTracksResponse)
+        console.log(vm.model.artistAlbumsResponse)
         // console.log(vm.model.chartTagsResponse)
     }
 

@@ -75,6 +75,12 @@
                   controllerAs: 'vm',
                   templateUrl: 'app/views/collections.html'
               })
+              .state('auth', {
+                  url: '/auth',
+                  controllerAs: 'vm',
+                  controller: 'AuthController',
+                  templateUrl: 'app/views/auth.html'
+              })
               .state('user', {
                   url: '/user',
                   controller: 'UserController',

@@ -2,16 +2,16 @@
   'use strict';
 
   angular
-    .module('app', ['ui.router','ngResource'])
-    .constant('URL', 'http://ws.audioscrobbler.com/2.0/')
-    .constant('FORMAT', 'json')
-    .constant('KEY', '18ba87e858ef3e6e22bc35f7d41a8a60')
-    .config(function($httpProvider){
+    .module('app', ['ui.router','ngResource', 'angular-md5'])
+    // .constant('URL', 'http://ws.audioscrobbler.com/2.0/')
+    // .constant('FORMAT', 'json')
+    // .constant('KEY', '18ba87e858ef3e6e22bc35f7d41a8a60')
+    // .config(function($httpProvider){
       // $httpProvider.defaults.headers.common['api_key'] = '18ba87e858ef3e6e22bc35f7d41a8a60';
       // $httpProvider.defaults.headers.common['format'] = 'json';
       // $httpProvider.defaults.headers.common['url'] = 'http://ws.audioscrobbler.com/2.0';
       //$httpProvider.interceptors.push('tokenSender');
-    });
+    // });
     // .factory('tokenSender', function($injector){
     //   return{
     //     request: function(config){

@@ -1,5 +1,5 @@
 <div class="input-group pull-right search">
-  <input class="form-control" type="text" placeholder="Найти" ng-model="vm.query">
+  <input class="form-control" id="search" type="text" placeholder="Найти" ng-model="vm.query" ng-model-options="{debounce : 500}" ng-change="vm.menu.artist(); vm.menu.track();">
   <span class="input-group-btn">
     <button class="btn btn-default" ng-click="">
       <i class="ion-android-options"></i>
@@ -9,7 +9,7 @@
     </button>
   </span>
 </div>
-<div class="search-results">
+<div class="search-results"  ng-if="vm.query">
   <ul id="artists-results">
     <li>
       <h3>Совпадения по исполнителю:</h3>

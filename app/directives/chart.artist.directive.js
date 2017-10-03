@@ -1,5 +1,5 @@
 ;(function(){
-    'use strict';
+    'use strict'
 
     angular
         .module('app')
@@ -10,6 +10,6 @@
                 },
                 restrict: 'E',
                 templateUrl: 'app/views/templates/chart.artist.template.html'
-            };
-        });
+            }
+        })
 })();
